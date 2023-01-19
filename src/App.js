@@ -1,14 +1,17 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import { MuiSkeleton } from './components/MuiSkeleton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div >
+      <MuiSkeleton rows={15} skeletonHeigth={100} skeletonWidth={1400} />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,7 +20,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
